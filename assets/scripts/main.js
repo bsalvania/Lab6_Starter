@@ -84,7 +84,7 @@ function initFormHandler() {
   submit.addEventListener('click', () => {
     // Steps B4-B9 will occur inside the event listener from step B3
     // B4. TODO - Create a new FormData object from the <form> element reference above
-    let formData = new FormData(form);
+    let formData = new FormData(formEl);
 
     // B5. TODO - Create an empty object (I'll refer to this object as recipeObject to
     //            make this easier to read), and then extract the keys and corresponding
@@ -127,7 +127,7 @@ function initFormHandler() {
     localStorage.clear();
     // B13. TODO - Delete the contents of <main>
     let mainEl = document.querySelector('main');
-    main.innerHTML = '';
+    mainEl.innerHTML = '';
   });
 
 
